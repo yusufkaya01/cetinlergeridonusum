@@ -204,7 +204,7 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   color: #ff695f;
-  opacity: 0.15;
+  opacity: 1;
 }
 
 .whatsapp-icon {
@@ -218,6 +218,7 @@ body {
   width: 100px; /* Adjust the size as needed */
   height: auto;
 }
+
 
 .main-blue-button a {
   display: inline-block;
@@ -893,7 +894,7 @@ Banner Style
 
 .main-banner:before {
   content: '';
-  background-image: url(../images/banner-right-image.png);
+  background-image:url('foto-video/IMG_3339.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   position: absolute;
@@ -1702,6 +1703,7 @@ contact
   position: relative;
   z-index: 5;
   display: inline-flex;
+  opacity: 1;
 }
 
 .contact-us .info span {
@@ -1727,6 +1729,49 @@ contact
 }
 
 .contact-us .info span a {
+  color: #ff685f;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: none;
+}
+
+/* Ensure this style doesn't have unwanted opacity */
+.address-info {
+  opacity: 1; /* Set opacity to 1 to ensure full visibility */
+}
+
+.contact-us .address-info {
+  margin-top: 30px;
+  position: relative;
+  z-index: 5;
+  display: inline-flex;
+  opacity: 1;
+}
+
+.contact-us .address-info span {
+  opacity: 1;
+  display: inline-flex;
+  margin-right: 30px;
+}
+
+.contact-us .address-info span i {
+  float: left;
+  width: 46px;
+  height: 46px;
+  display: inline-block;
+  text-align: center;
+  line-height: 46px;
+  background: rgb(255,104,95);
+  background: linear-gradient(105deg, rgba(255,104,95,1) 0%, rgba(255,144,104,1) 100%);
+  border-radius: 50%;
+  color: #fff;
+  font-size: 22px;
+  margin-left: 30px;
+  margin-right: 15px;
+}
+
+.contact-us .address-info span a {
   color: #ff685f;
   font-size: 14px;
   font-weight: 400;
