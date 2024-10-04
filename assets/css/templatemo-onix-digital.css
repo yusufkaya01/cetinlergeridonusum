@@ -207,6 +207,18 @@ body {
   opacity: 0.15;
 }
 
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Ensures it's above other content */
+  }
+
+.whatsapp-icon img {
+  width: 100px; /* Adjust the size as needed */
+  height: auto;
+}
+
 .main-blue-button a {
   display: inline-block;
   background-color: #03a4ed;
