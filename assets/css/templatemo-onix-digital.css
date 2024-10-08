@@ -207,6 +207,21 @@ body {
   opacity: 1;
 }
 
+.servislerimiz {
+  font-size: 36px; /* Adjust the size as needed */
+  margin-top: 20px; /* Add some space above if needed */
+  text-align: center; /* Center it horizontally if desired */
+  color: #ff0000; /* Change to your desired color (red in this case) */
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 800px;   /* Set a fixed height if you want uniformity */
+  object-fit: contain; /* Ensures the entire image is visible */
+}
+
+
+
 .whatsapp-icon {
   position: fixed;
   bottom: 20px;
@@ -217,6 +232,82 @@ body {
 .whatsapp-icon img {
   width: 100px; /* Adjust the size as needed */
   height: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for better contrast */
+    border-radius: 50%; /* Makes buttons circular */
+    width: 30px; /* Adjust width */
+    height: 30px; /* Adjust height */
+    background-size: 20px; /* Adjust icon size */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%; /* Adjust button width for bigger clickable area */
+    height: 100%; /* Ensures buttons cover the full height of the carousel */
+    z-index: 10; /* Bring it above other elements */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    padding: 10px; /* Add padding for bigger button */
+}
+
+#image-slider {
+  position: relative; /* Makes the slider's position clear */
+  width: 100%; /* Ensures it takes the full width of the parent */
+  overflow: hidden; /* Prevents content overflow */
+  min-height: 300px; /* Set a minimum height for the slider */
+}
+
+.carousel-item {
+  height: 100%; /* Ensure each carousel item takes the full height of the slider */
+  display: flex; /* Center content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Customize the tab navigation */
+.nav-tabs {
+  border-bottom: 2px solid #dc3545; /* Red border at the bottom of tabs */
+}
+
+.nav-tabs .nav-link {
+  color: #dc3545; /* Text color for inactive tabs */
+  border: none; /* Remove border */
+  background-color: transparent; /* Transparent background */
+  transition: background-color 0.3s; /* Smooth background transition */
+}
+
+.nav-tabs .nav-link:hover {
+  background-color: #f8d7da; /* Light red background on hover */
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #dc3545; /* Red background for active tab */
+  color: white; /* White text for active tab */
+  border-radius: 0; /* Remove rounded corners */
+}
+
+/* Center the video gallery section */
+.video-gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+}
+
+.video-gallery-container h2 {
+  color: #dc3545; /* Change this to your desired color */
 }
 
 
@@ -288,6 +379,37 @@ body {
   padding: 12px 25px;
   border-radius: 23px;
   letter-spacing: 0.25px;
+}
+
+.recycling-info {
+  background-color: #ffffff; /* Light blue background */
+  padding: 20px; /* Add padding */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center align text */
+}
+
+.recycling-info h2 {
+  font-size: 2em; /* Title font size */
+  color: #00796b; /* Title color */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.recycling-info p {
+  font-size: 1.2em; /* Text font size */
+  color: #004d40; /* Text color */
+  line-height: 1.6; /* Line height for readability */
+}
+
+.recycling-info {
+  margin: 30px 0; /* Space above and below the recycling info section */
+}
+
+.our-videos {
+  margin-top: 30px; /* Space above the videos section */
+}
+
+.our-videos {
+  overflow: hidden; /* Ensures the container includes all floated/absolutely positioned elements */
 }
 
 /* 
@@ -1704,6 +1826,7 @@ contact
   z-index: 5;
   display: inline-flex;
   opacity: 1;
+  
 }
 
 .contact-us .info span {
